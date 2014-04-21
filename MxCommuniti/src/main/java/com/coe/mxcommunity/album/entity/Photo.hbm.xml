@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.coe.mxcommunity.entity">
+	<class name="Photo" table="MXCOMMUNITY_PHOTO">
+		<id name="id" column = "ID">
+			<generator class="native"/>
+		</id>
+		<property name="userId"/>
+		<property name="mark" />
+		<property name="photoDes"/>
+		<property name="smallImgUrl"/>
+		<property name="middleImgUrl"/>
+		<property name="bigImgUrl"/>
+		<property name="createTime"/>
+		<many-to-one name="album" column="ALBUM_ID" not-null="true"/>
+	</class>
+</hibernate-mapping>

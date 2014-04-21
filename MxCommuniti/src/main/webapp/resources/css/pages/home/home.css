@@ -1,0 +1,113 @@
+/* 教室工具栏  */
+.classroom-toolbar{
+	position: relative;
+	height: 28px;
+	width: 751px;
+	background: url(../../../images/base/tool_bar_bk.gif) repeat-x 0 0;
+	border-right: 1px solid #ccc;
+	border-left: 1px solid #ccc;
+	font: 12px arial,宋体,sans-serif;
+	padding-top: 4px;
+}
+
+.classroom-toolbar .focus {
+	background: #ffb847;
+}
+
+.classroom-toolbar-left{
+float: left;
+}
+
+.classroom-toolbar-right{
+float: right;
+}
+
+.toolbar-element{
+float: left;
+display: inline-block;
+height: 24px;
+line-height: 23px;
+margin-right: 3px;
+}
+
+.toolbar-element:hover{
+color: #4c73c2;
+}
+
+.toobar-element-cont{
+position: relative;
+padding: 0 6px 0 20px;
+height: 24px;
+margin-left: 1px;
+float: left;
+line-height: 25px;
+}
+
+.toobar-element-cont img{
+	width: 16px;
+	height: 16px;
+	position: absolute;
+	top: 5px;
+	left: 4px;
+}
+
+.tool-check .tool-image{
+width: 16px;
+height: 16px;
+position: absolute;
+top: 7px;
+left: 4px;
+background: url(../../../images/base/check_box.png) no-repeat 0 0px;
+}
+
+.tool-check.check-on .tool-image{
+background: url(../../../images/base/check_box.png) no-repeat 0 -27px;
+}
+
+.tool-button .tool-image{
+width: 12px;
+height: 17px;
+position: absolute;
+top: 7px;
+left: 4px;
+background: url(adjust.png) no-repeat;
+}
+
+.tool-button.button-focus{
+background: #FF6666;
+}
+
+.toolbar-popup {
+border: 1px solid #999;
+background: #FFF;
+right: 4px;
+top: 29px;
+position: absolute;
+z-index: 999;
+display: none;
+}
+
+.toolbar-popup .popup-cont{
+margin: 3px 16px 0 0;
+}
+
+.popup-item{
+position: relative;
+padding-left: 22px;
+padding-right: 10px;
+display: block;
+height: 22px;
+line-height: 22px;
+}
+
+.popup-item .popup-image{
+width: 12px;
+height: 17px;
+position: absolute;
+top: 4px;
+left: 4px;
+}
+
+.popup-item:hover{
+background: #e6e6e6;
+}

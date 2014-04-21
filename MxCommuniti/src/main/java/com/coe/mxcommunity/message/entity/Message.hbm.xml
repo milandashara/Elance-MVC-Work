@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.coe.mxcommunity.message.entity">
+	<class name="Message" table="MXCOMMUNITY_MESSAGE">
+		<id name="id" column = "ID">
+			<generator class="native"/>
+		</id>
+		<property name="senderType"/>
+		<property name="senderId"/>
+		<property name="receiverType"/>
+		<property name="receiverId"/>
+		<property name="msgType"/>
+		<property name="content"/>
+		<property name="appendix"/>		
+		<property name="albumId"/>	
+		<property name="createTime"/>
+	</class>
+</hibernate-mapping>

@@ -1,0 +1,117 @@
+/* CSS Document */
+.jshelf-list{
+	
+}
+
+.jshelf-list:after{
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+
+.jshelf-list li{
+	list-style: none;
+	float: left;
+	border: 1px solid #cccccc;
+	margin: 8px 10px 0 0;
+	background: #ffffff;
+}
+
+.jshelf-box {
+	margin: 5px;
+	width: 172px;
+	font-size: 12px;
+}
+
+.jshelf-box a{
+	text-decoration: none;
+}
+
+.jshelf-box .col{
+	float: left;
+}
+
+.jshelf-box .col.end{
+	float: right;
+}
+
+.jshelf-box .row{
+	margin-top: 3px;
+}
+
+.jshelf-box .row:after{
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+
+.jshelf-box .right{
+	float: right;
+}
+
+.jshelf-box .p-img{
+	height: 160px;
+	text-align: center;
+}
+
+.jshelf-box .p-img a{
+	display: table-cell;
+  	vertical-align:middle;
+	width:172px;
+	height:160px;
+	text-align:center;
+	*display: block;
+	*font-size: 156px;
+}
+
+.jshelf-box .p-img img{
+	max-height: 160px;
+	max-width: 172px;
+}
+
+.jshelf-box .p-name a{
+	font-weight:bold;
+	font-size: 12px;
+	color: #0063dc;
+}
+
+.jshelf-box .p-name a:hover{
+	color: #00a3fc;
+}
+
+.jshelf-box .p-opera:after{
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+
+.jshelf-box .p-opera a{
+	float: left;
+	color: #FFFFFF;
+	padding: 2px 5px;
+	display: block; 
+	height: 20px;
+	line-height: 20px;
+	border-radius: 2px;
+	background: #ff9305;
+	text-align: center;
+	text-decoration: none;
+	border: 1px solid #ea780b;	
+}
+
+.jshelf-box .p-opera a:hover{
+	cursor: pointer;
+	background: #ffb33b; 
+}
+
+.jshelf-box .p-opera .detail{
+	color: #333;
+	background: #f9f9f9;
+	border: 1px solid #ccc;
+}

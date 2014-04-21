@@ -1,0 +1,45 @@
+.create-social-activity .member-item{
+	position: relative;
+	float: left;
+	border: 1px solid #ccc; 
+	padding: 0 20px 0 3px;
+	margin: 0 5px 5px 0;
+	background-color: #fff;
+}
+
+.create-social-activity .member-item input{
+	border: 0; 
+	height: 24px; 
+	width: 100px; 
+}
+
+.create-social-activity .member-item a{
+	background: url(../../../images/base/delete_icon.png) no-repeat; 
+	display: block; 
+	width: 16px; 
+	height: 16px; 
+	position: absolute; 
+	top: 4px; 
+	right: 2px;
+}
+
+.create-social-activity .member-item a:hover{
+	background-color: #ccc;
+}
+
+.create-social-activity .member-add{
+	float: left; 
+	border: 1px solid #ccc; 
+}
+
+.create-social-activity .member-add a{
+	background: url(../../../images/base/add_icon.png) no-repeat; 
+	display: block; 
+	width: 24px; 
+	height: 24px; 
+	background-position: 50% 50%;
+}
+
+.create-social-activity .member-add a:hover{
+	background-color: #ff9305;
+}

@@ -1,0 +1,51 @@
+@CHARSET "UTF-8";
+
+.box-wrapper {
+	padding: 20px 0 0 0;	
+}
+
+.account-profile-panel {
+	width: 840px;
+	margin: auto;
+	background: url(../../../images/pages/profile/pic_both_line.gif) 0 0 repeat-y;
+}
+
+.top-border {
+	width: 100%;
+	height: 10px;
+	background: url(../../../images/pages/profile/pic_top_line.gif) 0 0 no-repeat;
+}
+
+.account-profile-box {
+	margin: 0 1px 0;
+}
+
+.account-profile-tabs {
+	height: 40px; 
+	background-color: red; 
+	background: url(../../../images/pages/profile/pic_bottom_line.gif) 0 0 repeat-x;
+}
+
+.account-profile-tabs li{
+	float: left;
+	list-style: none;
+	background-color: green;
+	width: 115px;
+	height: 31px;
+	color: #e17634;
+	margin-right: 10px;
+	margin-top: 9px;
+	text-align: center;
+	line-height: 31px;
+	cursor: pointer;
+	background-image: url(../../../images/pages/profile/pic_tab_normal.gif);
+}
+
+.account-profile-tabs li.focus{
+	background-image: url(../../../images/pages/profile/pic_tab_over.gif);
+}
+
+.tab-content {
+	min-height: 400px;
+	display: none;
+}

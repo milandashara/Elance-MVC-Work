@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.coe.mxcommunity.entity">
+	<class name="Album" table="MXCOMMUNITY_ALBUM">
+		<id name="id" column = "ID">
+			<generator class="native"/>
+		</id>
+		<property name="ownerType"/>
+		<property name="ownerId"/>
+		<property name="albumType"/>
+		<property name="albumName"/>
+		<property name="albumDes"/>
+		<property name="createTime"/>
+		<set name="photos" cascade="all" lazy="false">
+			<key column="PHOTO_ID"/>
+			<one-to-many class="Photo"/>
+		</set>
+	</class>
+</hibernate-mapping>

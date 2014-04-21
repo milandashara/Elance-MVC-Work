@@ -1,0 +1,7 @@
+/* CSS Reset */
+.f-header {width:980px; height: 54px; line-height: 54px; margin:0 auto;}
+.f-header .navi-logo{float: left; margin-top: 2px;}
+
+.f-footer {margin:0 auto; width: 980px; padding: 20px 0; border-top: 1px solid #cee1ee; background: #f7f7f8;}
+.f-footer a{text-decoration:none; color: #000; padding: 0 5px;}
+.f-footer a:hover{color:#015FB6;}

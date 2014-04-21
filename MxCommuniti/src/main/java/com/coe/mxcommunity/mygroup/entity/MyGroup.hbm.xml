@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.coe.mxcommunity.mygroup.entity">
+	<class name="MyGroup" table="MXCOMMUNITY_MYGROUP">
+		<id name="id" column = "ID">
+			<generator class="native"/>
+		</id>
+		<property name="code"/>
+		<property name="name"/>
+		<property name="groupType"/>
+		<property name="schoolCode"/>
+		<property name="schoolName"/>
+		<property name="schoolYear"/>
+		<property name="totalNum"/>
+		<property name="actualNum"/>
+		<property name="creator"/>
+		<property name="createTime"/>
+		<set name="groupUsers" inverse="true" cascade="all">
+			<key column="GROUP_ID"/>
+			<one-to-many class="GroupUser"/>
+		</set>
+<!--  		<set name="desks" inverse="true" cascade="all">
+			<key column="CLASS_ID"/>
+			<one-to-many class="Desk"/>
+		</set>    -->
+	</class>
+</hibernate-mapping>

@@ -1,0 +1,279 @@
+@CHARSET "UTF-8";
+
+body, input, ul, li, a, button, dl, dd, p{
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	margin: 0;
+	font: 12px Arial,Helvetica,sans-serif;
+	background-color: #b9e6eb;
+	background-color: #b9e6eb;
+}
+
+
+.fr_navi { 
+	height: 40px;
+	background-color: #79464b;
+}
+	
+.fr_main {
+	
+}
+
+.main_wrapper{
+	width: 980px;
+	margin: 8px auto 8px auto;
+	clear: both;
+	min-height: 680px;
+	background-color: #eaf2f4;
+\ 	background-color: #edf5f7;
+/* 	background-image: url("../../images/base/repeat_bg_y.png"); */
+	background-repeat: repeat-y;
+}
+
+.main_left{
+	min-height: 680px;
+	float: left;
+	width: 160px;
+	margin: 0;
+}
+
+.main_right{
+	min-height: 680px;
+	float: right;
+	width: 819px;
+/* 	background-color: #C9F1FF; */
+	background-color: #fff;
+	border-left: 1px solid #CCCCCC;
+}
+
+.main_clear {
+	clear: both;
+}
+
+.fr_footer {
+	height: 120px;
+}
+
+.navi_common{
+	padding: 12px 0 0 0;
+}
+
+.navi_fix{
+	position:fixed;
+	z-index:99999;
+	width: 100%;
+	height: 40px;
+	background-color: #43a102;
+
+}
+
+.navi_wrapper {
+	margin: 0 auto;
+	width: 980px;
+}
+
+.navi_logo {
+	height: 39px;
+	float: left;
+}
+
+.navi_navi{
+	height: 39px;
+	float: left;
+}
+
+.navi_person{
+	height: 39px;
+	float: right;
+}
+
+.navi_search{
+	float: right;
+	margin: 8px 2px 0 2px;
+}
+
+.navi_search input{
+	float: left;
+	height: 12px;
+	border: 0;
+	outline: 0 none;
+	width: 142px;
+	background: #edf3f9;
+	border-radius: 10px 0 0 10px;
+	padding: 4px 4px 4px 8px;
+	color: rgb(153, 153, 153);
+}
+
+.navi_search a{
+	float: left;
+	width: 21px;
+	height: 20px;
+	margin-right: 10px;	
+	background: url(../../images/base/search_btn.png) no-repeat 0 3px #edf3f9;
+	border-radius: 0 10px 10px 0;
+	cursor: pointer;
+}
+
+.navi_setting{
+	float: left;
+}
+
+.setting_name{
+	color: #fff;
+	height: 38px;
+	line-height: 37px;
+	text-decoration: none;
+	padding: 0 10px; 
+	display: inline-block;
+}
+
+.setting_name:hover{
+	background-image: url(../../images/base/bg_nav.png);
+}
+
+.N_text {
+	height: 35px;
+	line-height: 35px;
+	font-size: 14px;
+	text-decoration: none;
+	padding: 0 0 0 20px;
+	color: #333333;
+	display: block;
+}
+
+.N_text:hover{
+	background-color: #d7ebf0;
+}
+
+.N_active {
+	background-color: #ffffff;	
+}
+
+.N_active:hover{
+	background-color: #ffffff;	
+}
+
+.N_icon {
+	width: 20px;
+	height: 20px;
+	margin: 0 10px 0 0;
+	display: inline-block;
+	vertical-align: -5px;
+}
+
+.N_lineborder{
+	margin: 0;
+}
+
+.N_line{
+	margin: 10px 0 6px 0;
+	padding: 0 0 0 15px;
+	border-style: solid;
+	border-width: 1px 0 0 0;
+	border-color: #d9d9d9;
+}
+
+.icon_home {
+	background-image: url(../../images/base/navi_home.png);
+	background-repeat: no-repeat;
+}
+
+.icon_msg {
+	background-image: url(../../images/base/navi_msg.png);
+	background-repeat: no-repeat;
+}
+
+.footer_wrapper {
+	margin: 0 auto;
+	padding: 20px 20px 10px 20px;
+	width: 940px;
+	height: 120px;
+	background-color: #e7e7e7;
+	color: #888;	
+}
+
+.footer_row{
+	margin: 0;
+	color: #333333;
+	padding: 8px 0 5px;
+	text-align: center;	
+}
+
+.help_links a{
+	height: 18px;
+	color: #333333;
+	line-height: 18px;
+	font-size: 12px;
+	text-decoration: none;
+	padding: 0 10px;
+}
+
+.help_links a:hover{
+	color: #0a8cd2;
+}
+
+.help_links{
+	margin: 0 auto;
+	color: #333333;
+}
+
+.main_tab{
+	width: 100%;
+	height: 24px;
+	border-bottom: 1px solid #CCC;
+}
+
+.main_content {
+	width: 100%;
+	float: left;
+	background: url(../../images/base/frame_left_bk.png) repeat-y right;
+}
+
+.main_conent_middle {
+	width: 558px;
+	min-height: 680px;
+	float: left;
+	padding: 16px 20px;
+	background-color: #fff;
+	border-right: 1px solid #BBDAE3;
+}
+
+.main_conent_right {
+	float: right;
+	width: 220px;	
+	height: 100%;
+}
+
+.main_tab ul{
+	list-style: none;
+	margin-left: 10px;
+	height: 25px;
+}
+
+.main_tab ul li{
+	display: inline;
+	width: 85px;
+	text-align: center;
+	float: left;
+}
+
+.main_tab ul li a{
+	border: 1px solid #ccc;
+	border-bottom: 1px solid #fff;
+	border-radius: 5px 5px 0 0;
+	display: block;
+	padding-top: 5px;
+	height: 18px;
+	text-decoration: none;
+}
+
+.memeber_box {
+	width: 227px;
+	height: 96px;
+	border: 1px solid #e6e6e6;
+	border-radius: 2px;
+	margin: 20px 20px 0 0;
+}

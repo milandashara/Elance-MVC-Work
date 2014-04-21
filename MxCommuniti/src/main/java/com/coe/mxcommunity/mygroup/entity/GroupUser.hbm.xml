@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.coe.mxcommunity.mygroup.entity">
+	<class name="GroupUser" table="MXCOMMUNITY_GROUP_USER"  mutable="false">
+		<composite-id name="id" class="GroupUser$Id">
+			<key-property name="groupId" access="field" column="GROUP_ID"/>
+			<key-property name="userId" access="field" column="USER_ID"/>
+		</composite-id>
+		<property name="applyTime" column="APPLY_TIME" type="timestamp" not-null="true"/>
+		<property name="addedTime" column="ADDED_TIME" type="timestamp" not-null="true"/>
+		<property name="pending" column="IS_PENDING" not-null="true"/>
+		<property name="role" column="ROLE" not-null="true"/>
+		<property name="hasSeat" column="HAS_SEAT" not-null="true"/>
+		<property name="seatX" column="SEAT_X"/>
+		<property name="seatY" column="SEAT_Y"/>
+		<many-to-one name="myGroup" column="GROUP_ID" not-null="true" insert="false" update="false"/>
+		<many-to-one name="user" column="USER_ID" not-null="true" insert="false" update="false"/>	
+	</class>
+</hibernate-mapping>

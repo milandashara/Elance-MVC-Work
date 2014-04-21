@@ -1,0 +1,566 @@
+@CHARSET "UTF-8";
+body, div, ul, li, a, p, h3, select{
+	margin: 0;
+	padding: 0;
+}
+
+body { 
+	font-size: 12px; 
+	font-family: Helvetica, Tahoma, Arial, sans-serif; 
+	font-weight: normal;
+}
+
+/* 主页面框架左侧单行栏Style*/
+.fr-navi-left-section .section-title{
+	padding-left: 10px;
+}
+
+.fr-navi-left-section .section-title h3{
+	color: #888;
+	font-size: 12px;
+	font-weight: bold;
+	height: 30px;
+	line-height: 30px;
+}
+
+.fr-navi-left-section .section-item {
+	color: #333;
+	font-size: 14px;
+	display: block;
+	height: 30px;
+	line-height: 30px;
+	text-decoration: none;
+	padding-left: 25px;
+}
+
+.fr-navi-left-section .section-item:hover{
+	background-color: #d7ebf0;
+}
+
+.fr-navi-left-section .section-item-icon{
+	float: left;
+	width: 16px;
+	height: 16px;
+	margin: 6px 8px 0 0;
+}
+
+/* 简单页面框架Style，如注册页面等 */
+.fr_min_body {
+	background: url(../../images/reg_repeat_bg.png) repeat-x scroll 0 0 #C8E1F0;
+}
+	
+.fr_min_header {
+	width: 900px;
+	height: 100px;
+	margin: 0 auto;
+	background: url(../../images/reg_repeat_bg.png) repeat-x scroll 0 0 #C8E1F0; 
+}
+
+.fr_min_content {
+	width: 900px;
+	height: 400px;
+	background: #fff;
+	margin: 0 auto 15px auto;
+	border-radius: 6px;
+}
+
+.fr_min_footer{
+	width: 900px;
+	margin: 0 auto;
+	color: #6e9ab8;
+	font-style: normal;
+}
+
+.fr_min_footer  .company_name{
+	margin-right: 10px;
+	float: left;
+}
+
+.fr_min_footer  .copyright{
+	float: right;
+}
+
+/* 小导航Table效果Style，如班级页面中的Table效果	*/
+.g_navi_min_2 {
+	float: left;
+}
+
+.g_navi_min_2 a.active{
+	background-color: #d7ebf0;
+	font-weight: bold;
+}
+.g_navi_min_2 a:hover{
+	background-color: #d7ebf0;
+}
+
+.g_navi_min_2 a {
+	display: block;
+	float: left;
+	padding: 4px 6px;
+	margin-right: 3px;
+}
+
+.g_navi_min_2 a img{
+	float: left;
+	width: 24px;
+	height: 24px;
+}
+.g_navi_min_2 a span{
+	float: left;
+	font-size: 13px;
+	padding: 5px 5px 0px 5px;
+	color: #333333;
+}
+
+/* 通用Table 输入项， 如用户属性信息页面Table效果  */
+.g_common_table tr td {line-height:26px; padding: 8px 3px;}
+.g_common_table td.right {text-align: right; width: 160px;}
+.g_common_table  .inputbox {
+	border: 1px solid #cacaca; 
+	padding: 3px; 
+	margin: 0px; 
+	width: 200px; 
+	font-size: 14px; 
+	border-radius: 3px;
+	line-height: 18px;
+}
+.g_common_table .inputbox:hover {border: solid 1px #FF9900;}
+
+.g_common_table .req_mark {color: #f00; padding-right: 5px;}
+
+.g_common_table .input_err {color: #f00; }
+
+.g_common_table td.lable {text-align: right; vertical-align: top;}
+
+
+/*班级主页消息发布Style  */
+.g_message_publish .message_content{
+	border: 1px solid #cccccc;
+	border-radius: 3px;
+	margin: 7px 0 0;
+}
+
+.g_message_publish .message_content textarea{
+	width: 544px;
+	height: 34px;
+	padding: 5px; 
+	border: 0px;
+	resize: none;
+	text-align: start;
+	overflow-y: auto;
+	overflow-x: hidden;
+	font-size: 14px;
+	font-family: Tahoma, 宋体;
+}
+
+.g_message_publish .message_func{
+	padding: 3px 0 10px;
+}
+
+.g_message_publish .message_func .func_item{
+	float: left;
+}
+
+.g_message_publish .message_func .func_item a{
+	background: url(../../images/pages/class/icon_photo.png) no-repeat;
+	width: 48px;
+	height: 24px;
+	display: inline-block;
+	padding: 0 10px 0 30px;
+	line-height: 24px;
+	cursor:pointer;
+}
+
+.g_message_publish .message_func .func_item2{
+	float: right;
+}
+
+.g_message_publish .message_func #publish_btn a{
+	border:1px solid #d9d9d9;
+	background: #f2f2f2;
+	display: inline-block;
+	border-radius: 2px;
+	color: #cccccc;
+	cursor: pointer;
+}
+
+.g_message_publish .message_func #publish_btn .active{
+	background: #e64141;
+	border-color: #e64141;
+	color: #fff;
+}
+
+.g_message_publish .message_func #publish_btn span{
+	display: inline-block;
+	width: 78px;
+	padding: 0;
+	text-align: center;
+	height: 20px;
+	line-height: 20px;
+	font-size: 14px;
+}
+
+.g_message_publish .message_func #publish_limits{
+	margin: 6px 10px 0 0;
+	vertical-align: top;
+	overflow: visible;
+}
+
+.g_message_publish .message_func #publish_limits span{
+	color: #0a8cd2;
+}
+
+.g_message_publish .message_func #publish_limits .arrow{
+	display: inline-block;
+	width: 7px;
+	height: 4px;
+	margin: 0 0 0 5px;
+	overflow: hidden;
+	margin: 0 0 0 5px;
+}
+
+.g_message_publish .message_func #publish_limits .arrow em{
+	display: inline-block;
+	font-family: "SimSun";
+	line-height: 12px;
+	margin: -7px 0 0 -2px;
+	font-style: normal;
+	font-weight: normal
+}
+
+.g_message_publish .message_func #publish_limits .arrow_turn em{
+	margin: 0 0 0 -2px;
+}
+
+/* 消息Style  */
+.g_msg_item {
+	border-bottom-width: 1px;
+	border-bottom-style: solid; 
+	border-color: #e6e6e6;
+	padding: 20px 0 11px;	
+}
+
+.g_msg_item .avatar{
+	float: left;
+	width: 50px;	
+}
+
+.g_msg_item .avatar a{
+	height: 50px;
+	display: block;
+	overflow: hidden;
+	border-radius: 2px;
+}
+
+.g_msg_item .avatar a img{
+	width: 50px;
+	height: 50px;
+}
+
+.g_msg_item .content{
+	position: relative;
+	margin-left: 65px;
+}
+
+.g_msg_item .content .user_info a{
+	font-size: 14px;
+	font-weight: bold;
+	line-height: 16px;
+}
+
+.g_msg_item .content .msg_text{
+	font-size: 14px;
+	line-height: 23px;
+	padding: 4px 0 4px;	
+}
+
+.g_msg_item .content .msg_image{
+	padding: 0 0 15px;
+}
+
+.g_msg_item .content .msg_image li{
+	float: left;
+	list-style: none;
+	margin: 5px 0 0 5px;
+}
+
+.g_msg_item .content .msg_image li img{
+	max-width: 120px;
+}
+
+.g_msg_item .content .msg_image:after{
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+
+.g_msg_item .msg_time a{
+	color: #14a0cd;
+}
+
+.g_msg_item .msg_time.right {
+	position: absolute;
+	right: 20px;
+	top:0;
+}
+
+/* Popup Menu  */
+.g-popup-menu {
+border: 1px solid #999;
+background: #FFF;
+right: 4px;
+top: 29px;
+position: absolute;
+z-index: 999;
+padding: 3px;
+}
+
+.g-popup-menu .popup-cont{
+margin: 3px 16px 3px 3px;
+}
+
+.g-popup-menu .popup-item{
+position: relative;
+padding-left: 22px;
+padding-right: 10px;
+display: block;
+height: 22px;
+line-height: 22px;
+}
+
+.g-popup-menu .popup-item .popup-image{
+width: 16px;
+height: 16px;
+position: absolute;
+top: 4px;
+left: 4px;
+}
+
+.g-popup-menu .popup-item:hover{
+background: #e6e6e6;
+}
+
+
+/* Tab式样 */
+/* 详细信息页面通用格式 */
+.g-common-navi ul{
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	height: 49px;
+	padding-left: 20px;
+	border-color: #d9d9d9;
+	list-style-type: disc;
+}
+
+.g-common-navi ul li{
+	position: relative;
+	float: left;
+	border-width: 1px;
+	border-style: solid;
+	border-right-width: 0;
+	height: 48px;
+	border-color: #d9d9d9;
+	display: list-item;
+	list-style: none;
+}
+
+.g-common-navi ul li a{
+	display: block;
+	width: 116px;
+	height: 38px;
+	border-bottom-width: 0;
+	padding: 8px 0 3px 0;
+	border-width: 1px;
+	border-style: solid;
+	line-height: 27px;
+	text-align: center;
+	border-color: #ffffff;
+	font-family: 'Microsoft Yahei';
+	font-size: 16px;
+	font-style: normal;
+	background-color: #f2f2f2;
+}
+
+.g-common-navi-2 {
+	height: 26px;
+	border-bottom: 2px solid #FF0000;
+}
+
+.g-common-navi-2 .title{
+	font-size: 14px;
+	font-weight: bold;
+	line-height: 17px;
+	height: 17px;
+	padding: 4px 0;
+	float: left;
+	_display: inline;
+	margin-right: 20px;
+}
+
+.g-common-navi-2 .title .icon{
+	border: 0;
+	vertical-align: text-bottom;
+	background-repeat: no-repeat;
+}
+
+.g-common-navi-2 .tabs{
+	height: 26px;
+	overflow: hidden;
+}
+
+.g-common-navi-2 .tabs a{
+	font-size: 12px;
+	color: #369;
+	text-decoration: none;
+	float: left;
+	height: 19px;
+	line-height: 19px;
+	padding: 5px 19px 4px;
+	cursor: pointer;
+}
+
+.g-common-navi-2 .tabs a.active{
+	color: #333;
+	border-width: 1px 1px 0;
+	border-style: solid solid none;
+	border-color: #d6dae4;
+	padding: 4px 18px 4px;
+	background-color: #FFF;
+	border-radius: 5px 5px 0 0;
+}
+
+/*连接文字*/
+.g-link-text {
+	color: #555;
+	text-decoration: none;
+}
+
+.g-link-text:hover{
+	text-decoration: underline;	
+}
+
+/* 社交活动 */
+.g-activity-item{
+	border-bottom-width: 1px;
+	border-bottom-style: solid; 
+	border-color: #e6e6e6;
+	padding: 20px 0 11px;	
+}
+
+.g-activity-item .avatar{
+	float: left;
+	width: 50px;	
+}
+
+.g-activity-item .avatar .name{
+	font-size: 14px;
+	padding-top: 10px;
+	font-weight: bold;
+}
+
+.g-activity-item .avatar a{
+	height: 50px;
+	display: block;
+	overflow: hidden;
+	border-radius: 2px;
+}
+
+.g-activity-item .avatar a img{
+	width: 50px;
+	height: 50px;
+}
+
+.g-activity-item .content{
+	position: relative;
+	margin-left: 65px;
+	padding: 10px;
+	border: 1px solid #f7dea3;
+	box-shadow: 0 2px 0 0 #ededed;
+	background: #fffdee;
+}
+
+.g-activity-item .content.yellow{
+	border: 1px solid #a3def7;
+	box-shadow: 0 2px 0 0 #ededed;
+	background: #effdfe;	
+}
+
+.g-activity-item .content.blue{
+	border: 1px solid #a3def7;
+	box-shadow: 0 2px 0 0 #ededed;
+	background: #fdddef;
+}
+
+.g-activity-item .content.red{
+	border: 1px solid #a3def7;
+	box-shadow: 0 2px 0 0 #ededed;
+	background: #fdefbb;	
+}
+
+.g-activity-item .content .text{
+	font-weight: bold;
+	font-size: 14px;
+	line-height: 23px;	
+}
+
+.g-activity-item .content .image-list{
+	padding: 0 0 10px;	
+}
+
+.g-activity-item .content .image-list:after{
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+
+.g-activity-item .content .image-list li{
+	float: left;
+	list-style: none;
+	margin: 5px 0 0 5px;
+}
+
+.g-activity-item .content .create-time{
+	color: #14a0cd;	
+}
+
+.g-activity-item .content .score{
+	position: absolute;
+	right: 20px;
+	top:10px;
+	font-weight: bold;
+	color: red;	
+}
+
+/* 通用大Button*/
+.g-common-button {
+	display: block; 
+	width: 107px; 
+	height: 32px; 
+	padding-left: 41px;
+	background: #fff8f2;
+	border: 1px solid #ffb38c;
+	line-height: 32px;
+	font-size: 14px;
+	color: #ee5500;
+	font-weight: bold;
+	text-align: left;
+	text-decoration: none;
+}
+
+.g-common-button:hover{
+	cursor: pointer;
+	background: #fee9de;
+}
+
+.g-common-button span{
+	position: absolute;
+	top: 9px;
+	left: 20px;
+	display: block; 
+	width: 16px; 
+	height: 16px;
+}

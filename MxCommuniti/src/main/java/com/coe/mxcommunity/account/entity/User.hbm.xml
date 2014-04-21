@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.coe.mxcommunity.account.entity">
+	<class name="User" table="MXCOMMUNITY_USER">
+		<id name="id" type="string">
+			 <column name="ID" length="50" /> 
+			<generator class="native" />
+		</id>
+		<property name="bigAvatar" type="string" column="BIGAVATAR">
+		</property>
+
+		<property name="smallAvatar" type="string" column="SMALLAVATAR">
+		</property>
+
+		<property name="code" type="string">
+			<column name="CODE" length="50" />
+		</property>
+		<property name="name" type="string">
+			<column name="NAME" length="20" />
+		</property>
+		<property name="email" type="string">
+			<column name="EMAIL" length="80" not-null="true" />
+		</property>
+		<property name="password" type="string">
+			<column name="PASSWORD" length="20" not-null="true" />
+		</property>
+		<property name="sex" type="int">
+			<column name="SEX"  />
+		</property>
+		<property name="registerTime" type="date" column="REGISTER_TIME">
+		</property>
+		<property name="longitude" type="string">
+			<column name="LONGITUDE" length="15" />
+		</property>
+		<property name="latitude" type="string">
+			<column name="LATITUDE" length="15" />
+		</property>
+		<property name="birthday" type="date" column="BIRTHDAY">
+		</property>
+		<property name="grade" type="int" column="GRADE">
+		</property>
+		<set name="groupUsers" inverse="true" order-by="addedTime"
+			cascade="all">
+			<key column="USER_ID"></key>
+			<one-to-many class="com.coe.mxcommunity.mygroup.entity.GroupUser" />
+		</set>
+	</class>
+
+</hibernate-mapping>

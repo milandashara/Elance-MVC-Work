@@ -1,0 +1,40 @@
+@CHARSET "UTF-8";
+table {font-size: 14px;}
+
+table tr td {line-height:26px; padding: 8px 3px;}
+
+td.right {text-align: right; width: 160px;}
+
+.main_tab {padding: 24px 0 22px 40px;}
+
+.main_content {height:260px; clear: both; background: url(../../../images/pages/register/vline.png) no-repeat scroll 630px 0;}
+
+.tab_text {font-size: 22px; color: #333; font-family: "Microsoft Yahei";}
+
+.inputbox {
+	border: 1px solid #cacaca; 
+	padding: 3px; 
+	margin: 0px; 
+	width: 200px; 
+	font-size: 14px; 
+	border-radius: 3px;
+	line-height: 18px;
+	}
+
+.inputbox:hover {border: solid 1px #FF9900;}
+
+.textbox {padding-right: 8px;}
+
+.req_mark {color: #f00; padding-right: 5px;}
+
+.input_err {color: #f00; }
+
+.register_btn { width: 190px; height: 38px; background: url(../../../images/base/register_btn.gif); text-indent: -9999em; border: 0; cursor: pointer; margin: 15px 0 0 0;}
+
+.btn_wrap {margin-left: 160px;}
+
+.reg_form {float: left;}
+
+.reg_image {float: right; margin-right: 50px;}
+
+.input_err {font-size: 12px;}
