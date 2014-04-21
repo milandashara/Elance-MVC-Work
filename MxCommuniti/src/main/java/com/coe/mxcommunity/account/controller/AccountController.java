@@ -92,7 +92,7 @@ public class AccountController {
 		}
 		
 		user.setCode(CodeGenerator.generateUserCode(UserType.MALE));
-		user.setRegiserTime(new Timestamp((new Date()).getTime()));
+		user.setRegisterTime(new Timestamp((new Date()).getTime()));
 		UserDao.addUser(user);
 		httpSession.setAttribute("GroupUser", user);
 		model.addAttribute("usename", user.getName());
